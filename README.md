@@ -1,8 +1,16 @@
 # React Context Çalışma Notu
 
-Header ve Footer Component'leri üzerinden tema ve dil state'lerini değiştiren bir uygulama üzerine yoğunlaşalım ve react context'i anlamaya çalışalım.
+React Context'i basit bir örnek üzerinden daha iyi anlamaya çalışalım:
 
-### Context Kullanmadan Yazalım
+Sitemizde dil seçeneği ve tema seçeneği olduğunu düşünelim ve bu seçenekler birer state'te tutuluyor olsun amacımız ise Header ve Footer Component'lari üzerinden tema ve dil state'lerini değiştiren bir uygulama yazmak ve bu aşamada react context'i kullanmak.
+
+Basitçe Uygulama Görünümü:
+
+| Görsel 1                             | Görsel 2                             |
+|:-------------------------------------|:-------------------------------------|
+| ![home:en](./src/img/ss/home_en.png) | ![home:en](./src/img/ss/home_tr.png) |
+
+### React Context Kullanmadan Yazalım ve Farkı Görelim
 
 **App.js:**
 ```jsx
@@ -122,7 +130,6 @@ const context = createContext()
 export default context
 ```
 
-👈👇
 #### Adım 2: App.js'i aşağıdaki gibi refactor ediyorum ve context'i kullanıyorum.
 ```jsx
 import Header from "./components/Header"
