@@ -6,9 +6,13 @@ Sitemizde dil seçeneği ve tema seçeneği olduğunu düşünelim ve bu seçene
 
 Basitçe Uygulama Görünümü:
 
-| Görsel 1                             | Görsel 2                             |
-|:-------------------------------------|:-------------------------------------|
-| ![home:en](./src/img/ss/home_en.png) | ![home:en](./src/img/ss/home_tr.png) |
+| **Koyu mod TR**                       | **Koyu mod EN**                       |
+|:--------------------------------------|:--------------------------------------|
+| ![home:en](./src/img/ss/dark-tr.png)  | ![home:en](./src/img/ss/dark-en.png)  |
+| <center>**Açık mod TR**</center>      | <center>**Açık mod EN**</center>      |
+| ![home:en](./src/img/ss/light-tr.png) | ![home:en](./src/img/ss/light-en.png) |
+
+Uygulamayı [buradan](https://YavuzSametKan.github.io/react-context/) deneyebilirsiniz.
 
 ### React Context Kullanmadan Yazalım ve Farkı Görelim
 
@@ -119,9 +123,9 @@ Component'lar arası 2 adet state 18 prop ile ancak aktarılabildi.
 
 ### Gelin React Context Kullanalım ve Prop Karmaşasından Kurtulalım 
 
-#### Adım 1: src/context/SiteContext.js isimli bir dosya açıyorum ve bir context üretiyorum.
+#### Adım 1: src/context/SiteContext.jsx isimli bir dosya açıyorum ve bir context üretiyorum.
 
-**SiteContext.js:**
+**SiteContext.jsx:**
 ```jsx
 import {createContext} from "react";
 
